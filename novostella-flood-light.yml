@@ -28,14 +28,12 @@ api:
 ota:
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
   ap:
 
 dashboard_import:
-  package_import_url: github://303Bryan/esphome/edit/main/novostella-flood-light.yaml
-  import_full_config: true
-  
+  package_import_url: github://303Bryan/esphome/novostella-flood-light.yml@main
+  import_full_config: false
+
 button:
   - platform: restart
     name: Restart
